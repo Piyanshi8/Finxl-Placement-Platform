@@ -1,0 +1,135 @@
+{
+    "financial_modeling": {
+        "name": "Financial Modeling",
+        "keywords": [
+            "financial modeling",
+            "financial model",
+            "valuation model",
+            "forecast model"
+        ],
+        "weight": 3
+    },
+
+    "excel": {
+        "name": "Advanced Excel",
+        "keywords": [
+            "excel",
+            "advanced excel",
+            "vlookup",
+            "xlookup",
+            "pivot table",
+            "pivot tables"
+        ],
+        "weight": 2
+    },
+
+    "sql": {
+        "name": "SQL",
+        "keywords": [
+            "sql",
+            "sql queries",
+            "mysql",
+            "postgresql",
+            "database"
+        ],
+        "weight": 2
+    },
+
+    "power_bi": {
+        "name": "Power BI",
+        "keywords": [
+            "power bi",
+            "powerbi"
+        ],
+        "weight": 2
+    },
+
+    "tableau": {
+        "name": "Tableau",
+        "keywords": [
+            "tableau"
+        ],
+        "weight": 2
+    },
+
+    "budgeting": {
+        "name": "Budgeting",
+        "keywords": [
+            "budgeting",
+            "budget preparation",
+            "budget management"
+        ],
+        "weight": 2
+    },
+
+    "forecasting": {
+        "name": "Forecasting",
+        "keywords": [
+            "forecasting",
+            "financial forecast",
+            "forecast"
+        ],
+        "weight": 2
+    },
+
+    "financial_statement_analysis": {
+        "name": "Financial Statement Analysis",
+        "keywords": [
+            "financial statement analysis",
+            "income statement",
+            "balance sheet",
+            "cash flow statement"
+        ],
+        "weight": 3
+    },
+
+    "accounting": {
+        "name": "Accounting Fundamentals",
+        "keywords": [
+            "accounting",
+            "accounting fundamentals",
+            "journal entry",
+            "general ledger"
+        ],
+        "weight": 2
+    },
+
+    "variance_analysis": {
+        "name": "Variance Analysis",
+        "keywords": [
+            "variance analysis",
+            "budget variance",
+            "actual vs budget"
+        ],
+        "weight": 2
+    },
+
+    "mis_reporting": {
+        "name": "MIS Reporting",
+        "keywords": [
+            "mis report",
+            "mis reporting",
+            "management information system"
+        ],
+        "weight": 1
+    },
+
+    "analytics": {
+        "name": "Analytical Skills",
+        "keywords": [
+            "analytical skills",
+            "analytical thinking",
+            "data analysis"
+        ],
+        "weight": 1
+    },
+
+    "communication": {
+        "name": "Communication Skills",
+        "keywords": [
+            "communication skills",
+            "communication"
+        ],
+        "weight": 1
+    }
+}

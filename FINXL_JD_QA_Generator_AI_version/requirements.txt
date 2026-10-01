@@ -1,0 +1,8 @@
+Flask
+gunicorn
+google-genai
+python-dotenv
+openpyxl
+pypdf
+python-docx
+reportlab

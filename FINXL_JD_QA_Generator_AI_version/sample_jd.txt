@@ -1,0 +1,39 @@
+Role: Financial Analyst
+
+Experience: 0–2 years
+
+Job Description:
+
+We are looking for a Financial Analyst to support financial planning,
+analysis and reporting activities.
+
+Responsibilities:
+
+- Prepare monthly financial reports.
+- Analyze revenue, expenses and profitability.
+- Perform financial statement analysis.
+- Prepare budgets and financial forecasts.
+- Build and maintain financial models.
+- Prepare MIS reports and dashboards.
+- Support management with financial insights.
+- Perform variance analysis.
+- Analyze business data and identify financial trends.
+- Present financial findings to management.
+
+Required Skills:
+
+- Accounting fundamentals
+- Financial modeling
+- Financial statement analysis
+- Advanced Microsoft Excel
+- Budgeting and forecasting
+- Basic SQL
+- Power BI or Tableau
+- Analytical skills
+- Communication skills
+
+Preferred Skills:
+
+- Knowledge of financial planning and analysis.
+- Experience with financial dashboards.
+- Understanding of business reporting.
