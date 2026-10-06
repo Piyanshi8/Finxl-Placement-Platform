@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+:root {
+	color-scheme: light;
+	scroll-behavior: smooth;
+	--app-primary: #2563eb;
+	--app-primary-dark: #4338ca;
+	--app-sky: #0ea5e9;
+	--app-orange: #f97316;
+	--app-border: rgb(203 213 225 / 0.72);
+	--app-shadow: rgb(148 163 184 / 0.18);
+}
+
+body {
+	background:
+		radial-gradient(ellipse at 8% 0%, rgb(191 219 254 / 0.3), transparent 36%),
+		radial-gradient(ellipse at 100% 12%, rgb(224 242 254 / 0.38), transparent 32%),
+		linear-gradient(135deg, #f8fafc 0%, #f1f5f9 55%, #f8fafc 100%);
+	color: #1e293b;
+}
+
+.app-content {
+	scroll-behavior: smooth;
+	scrollbar-gutter: stable;
+	scrollbar-width: thin;
+	scrollbar-color: #cbd5e1 transparent;
+}
+
+.app-content .bg-white.border,
+.app-content .metric-card {
+	border-color: var(--app-border);
+	background-color: rgb(255 255 255 / 0.9);
+	backdrop-filter: blur(18px);
+	box-shadow: 0 1px 2px rgb(15 23 42 / 0.025), 0 12px 30px var(--app-shadow);
+	transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+	animation: content-rise 420ms both;
+}
+
+.app-content .bg-white.border:hover,
+.app-content .metric-card:hover {
+	border-color: rgb(96 165 250 / 0.58);
+	box-shadow: 0 20px 42px rgb(148 163 184 / 0.22);
+	transform: translateY(-2px);
+}
+
+/* Keep older page-level utilities aligned with the shared blue/slate tokens. */
+[class~="bg-slate-950"],
+[class~="bg-slate-950/80"],
+[class~="bg-slate-950/60"] {
+	background-color: #f8fafc !important;
+}
+
+[class~="bg-slate-900"],
+[class~="bg-slate-900/60"] {
+	background-color: rgb(255 255 255 / 0.94) !important;
+}
+
+[class~="bg-slate-800"],
+[class~="bg-slate-700"] {
+	background-color: #f1f5f9 !important;
+}
+
+[class*="bg-rose-50"],
+[class*="bg-rose-100"],
+[class*="bg-pink-50"],
+[class*="bg-pink-100"],
+[class*="bg-purple-50"],
+[class*="bg-purple-100"] {
+	background-color: #eff6ff !important;
+}
+
+[class*="bg-rose-500"],
+[class*="bg-rose-600"],
+[class*="bg-pink-500"],
+[class*="bg-pink-600"],
+[class*="bg-purple-500"],
+[class*="bg-purple-600"] {
+	background-color: var(--app-primary) !important;
+}
+
+[class*="text-rose-"],
+[class*="text-pink-"],
+[class*="text-purple-"] {
+	color: #1d4ed8 !important;
+}
+
+[class*="border-rose-"],
+[class*="border-pink-"],
+[class*="border-purple-"] {
+	border-color: rgb(191 219 254 / 0.85) !important;
+}
+
+[class*="ring-rose-"],
+[class*="ring-pink-"],
+[class*="ring-purple-"] {
+	--tw-ring-color: rgb(59 130 246 / 0.24) !important;
+}
+
+[class*="shadow-rose-"],
+[class*="shadow-pink-"],
+[class*="shadow-purple-"] {
+	--tw-shadow-color: rgb(59 130 246 / 0.16) !important;
+}
+
+[class*="border-slate-"] {
+	border-color: var(--app-border) !important;
+}
+
+[class*="hover:bg-slate-"]:hover,
+[class*="hover:bg-rose-"]:hover,
+[class*="hover:bg-pink-"]:hover,
+[class*="hover:bg-purple-"]:hover {
+	background-color: #eff6ff !important;
+}
+
+[class*="hover:border-rose-"]:hover,
+[class*="hover:border-pink-"]:hover,
+[class*="hover:border-purple-"]:hover {
+	border-color: rgb(96 165 250 / 0.62) !important;
+}
+
+button[class~="bg-slate-900"]:not(:disabled),
+button[class*="bg-blue-600"]:not(:disabled),
+button[class*="bg-indigo-600"]:not(:disabled),
+button[class*="bg-rose-600"]:not(:disabled),
+button[class*="bg-pink-600"]:not(:disabled),
+button[class*="bg-purple-600"]:not(:disabled),
+button[class*="from-rose-"]:not(:disabled),
+button[class*="from-pink-"]:not(:disabled),
+button[class*="from-purple-"]:not(:disabled) {
+	background-image: linear-gradient(110deg, #2563eb, #4f46e5 56%, #0ea5e9) !important;
+	border-color: transparent;
+	box-shadow: 0 8px 20px rgb(59 130 246 / 0.2);
+	color: #fff !important;
+	transition: box-shadow 180ms ease, transform 180ms ease, filter 180ms ease;
+}
+
+button[class~="bg-slate-900"]:not(:disabled):hover,
+button[class*="bg-blue-600"]:not(:disabled):hover,
+button[class*="bg-indigo-600"]:not(:disabled):hover,
+button[class*="bg-rose-600"]:not(:disabled):hover,
+button[class*="bg-pink-600"]:not(:disabled):hover,
+button[class*="bg-purple-600"]:not(:disabled):hover,
+button[class*="from-rose-"]:not(:disabled):hover,
+button[class*="from-pink-"]:not(:disabled):hover,
+button[class*="from-purple-"]:not(:disabled):hover {
+	filter: saturate(1.08) brightness(1.02);
+	box-shadow: 0 10px 24px rgb(59 130 246 / 0.26);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	--tw-ring-color: rgb(59 130 246 / 0.3) !important;
+	border-color: #60a5fa !important;
+}
+
+.media-canvas {
+	background-color: #111827 !important;
+}
+
+.toast-surface {
+	background-color: #334155 !important;
+}
+
+.overview-chart-grid {
+	background-color: #f8fafc;
+	background-image: linear-gradient(to bottom, rgb(148 163 184 / 0.18) 1px, transparent 1px);
+	background-size: 100% 25%;
+}
+
+.chart-bar {
+	background: linear-gradient(180deg, #4f46e5 0%, #0ea5e9 100%);
+	box-shadow: 0 3px 8px rgb(37 99 235 / 0.2);
+	transform-origin: bottom;
+	animation: bar-rise 650ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.chart-bar-muted {
+	background: linear-gradient(180deg, #64748b 0%, #94a3b8 100%);
+	box-shadow: 0 3px 8px rgb(71 85 105 / 0.14);
+}
+
+.skeleton {
+	border-radius: 6px;
+	background: linear-gradient(100deg, #e2e8f0 25%, #f8fafc 45%, #e2e8f0 65%);
+	background-size: 220% 100%;
+	animation: skeleton-shimmer 1.25s ease-in-out infinite;
+}
+
+.skeleton-card {
+	box-shadow: 0 1px 2px rgb(15 23 42 / 0.035);
+}
+
+@keyframes skeleton-shimmer {
+	to { background-position-x: -220%; }
+}
+
+@keyframes content-rise {
+	from { opacity: 0; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bar-rise {
+	from { transform: scaleY(0.15); opacity: 0.45; }
+	to { transform: scaleY(1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root,
+	.app-content {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	button,
+	[role="button"] {
+		transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+	}
+}
