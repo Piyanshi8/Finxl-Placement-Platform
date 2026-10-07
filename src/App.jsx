@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { LayoutDashboard, Users, Video, UserCheck, BookOpen, Briefcase, BarChart2, FileText, Building2, Search, Bell, Plus, CheckCircle2, Clock, ChevronRight, TrendingUp, Award, UploadCloud, FileDown, Sparkles, PlayCircle, CheckCircle, XCircle, HelpCircle, LogOut, SlidersHorizontal, MapPin, DollarSign, Calendar, Eye, Send, MessageSquare, AlertCircle, Pencil, Download, Check, X, Loader2, RefreshCw, Mail, Phone, Printer, ChevronDown, User, Settings, Lock, Repeat, ShieldAlert, HelpCircle as QnAIcon } from 'lucide-react';
 import OverviewPage from './components/OverviewPage.jsx';
 import StudentListPage from './components/StudentListPage.jsx';
+import Batches from './components/Batches.jsx';
 import LiveMocksPage from './components/LiveMocksPage.jsx';
 import StudentProfilePage from './components/StudentProfilePage.jsx';
 import LearningModulesPage from './components/LearningModulesPage.jsx';
@@ -130,7 +131,7 @@ export default function App() {
                 Sign In
               </button>
             </form>
-
+            
             <div className="relative my-4 flex items-center justify-center">
               <div className="border-t border-slate-200 w-full" />
               <span className="bg-slate-50 px-3 text-[10px] text-slate-400 font-bold uppercase tracking-wider absolute">
@@ -168,10 +169,11 @@ export default function App() {
     );
   }
 
-  // Navigation Items Sidebar
+  // Navigation Items Sidebar (Fixed syntax)
   const navigationItems = [
     { name: 'Overview', icon: LayoutDashboard },
     { name: 'Student List', icon: Users },
+    { name: 'Batches', icon: Users },
     { name: 'Live Mocks', icon: Video },
     { name: 'Student Profile', icon: UserCheck },
     { name: 'Learning Modules', icon: BookOpen },
@@ -246,7 +248,7 @@ export default function App() {
         </div>
       </aside>
 
-      {/* Main Main App Section */}
+      {/* Main App Section */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden relative">
         {/* Top Navbar */}
         <header className="sticky top-0 z-30 h-16 bg-white/70 backdrop-blur-md border-b border-slate-200/60 px-6 py-4 flex items-center justify-between shrink-0 shadow-sm">
@@ -385,6 +387,7 @@ export default function App() {
               setSelectedStudent={setSelectedStudent}
             />
           )}
+          {activeTab === 'Batches' && <Batches />}
           {activeTab === 'Live Mocks' && <LiveMocksPage />}
           {activeTab === 'Student Profile' && (
             <StudentProfilePage studentName={selectedStudent} />

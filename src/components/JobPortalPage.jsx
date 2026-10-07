@@ -24,7 +24,7 @@ export default function JobPortalPage() {
     { name: 'Instahyre', desc: 'AI-Powered Top Tech Hiring', color: 'from-emerald-500 to-teal-700', badge: 'AI Match', url: 'https://www.instahyre.com' },
     { name: 'iimjobs', desc: 'Management & Finance Jobs', color: 'from-amber-500 to-orange-600', badge: 'Executive', url: 'https://www.iimjobs.com' },
     { name: 'Wellfound', desc: 'Startup Jobs & Investment', color: 'from-rose-500 to-pink-600', badge: 'Startups', url: 'https://wellfound.com' },
-    { name: 'JobGreen', desc: 'Freshers & Experienced Roles', color: 'from-green-600 to-emerald-800', badge: 'Verified', url: 'https://www.jobgreen.com' },
+    { name: 'JobGrin', desc: 'Freshers & Experienced Roles', color: 'from-green-600 to-emerald-800', badge: 'Verified', url: 'https://www.jobgreen.com' },
     { name: 'TodayWalkins', desc: 'Direct Walk-in Drive Alerts', color: 'from-violet-600 to-purple-700', badge: 'Walk-ins', url: 'https://www.todaywalkins.com' },
   ];
 
